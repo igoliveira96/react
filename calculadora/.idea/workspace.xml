@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b17b06c2-113f-4c6e-b97a-fcd91af6c7c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Cliente.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/RobotoMono-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/Button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/display/Display.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/display/Display.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Calculator.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Calculator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo-app/backend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo-app/backend/src/api/todo/todo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo-app/backend/src/api/todo/todoService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo-app/backend/src/config/database.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo-app/backend/src/config/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo-app/backend/src/config/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo-app/backend/src/loader.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1QpOdFLnGJEdzvIICcpE6Ob39ew" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -33,6 +27,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/fonts" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -63,6 +58,9 @@
       <updated>1568464156812</updated>
       <workItem from="1568464158992" duration="3148000" />
       <workItem from="1568468237929" duration="2614000" />
+      <workItem from="1568489180061" duration="990000" />
+      <workItem from="1568641026361" duration="1421000" />
+      <workItem from="1571585935537" duration="482000" />
     </task>
     <servers />
   </component>
