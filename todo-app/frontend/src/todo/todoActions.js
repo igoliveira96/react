@@ -9,19 +9,22 @@ export const changeDescription = event => ({
 });
 
 export const search = () => {
-  const request = axios.get(`${URL}?sort=-createdAt`);
-  return {
-    type: TODO_ENUM.TODO_SEARCH,
-    payload: request
-  }
+  return (dispatch, getState) => {
+    const description = getState().todo.description;
+    const search = description ? `&description__regex=/${description}/` : '';
+    axios.get(`${URL}?sort=-createdAt${search}`)
+      .then(resp => dispatch({
+        type: TODO_ENUM.TODO_SEARCH,
+        payload: resp.data
+      }))
+  };
 };
 
 export const add = (description) => {
   return dispatch => {
     axios.post(URL, { description })
       .then(resp => dispatch({
-        type: TODO_ENUM.TODO_ADDED,
-        payload: resp.data
+        type: TODO_ENUM.TODO_SEARCH_CLEAR
       }))
       .then(resp => dispatch(search()));
   }
@@ -30,20 +33,29 @@ export const add = (description) => {
 export const markAsDone = (todo) => {
   return dispatch => {
     axios.put(`${URL}/${todo._id}`, {...todo, done: true})
-      .then(resp => dispatch(search()));
+      .then(resp => dispatch(search('')));
   }
 };
 
 export const markAsPending = (todo) => {
   return dispatch => {
     axios.put(`${URL}/${todo._id}`, {...todo, done: false})
-      .then(resp => dispatch(search()));
+      .then(resp => dispatch(search('')));
   }
 };
 
 export const remove = (todo) => {
+  // Retorno de uma função
   return dispatch => {
     axios.delete(`${URL}/${todo._id}`)
-      .then(resp => dispatch(search()));
+      .then(resp => dispatch(search('')));
   };
+};
+
+export const clear = () => {
+  // Retorno de uma actions
+  return [
+    { type: TODO_ENUM.TODO_SEARCH_CLEAR },
+    search()
+  ]
 };
